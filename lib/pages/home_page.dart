@@ -91,19 +91,19 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             // tab bar
-            const SizedBox(
-              height: 24,
-            ),
+            // const SizedBox(
+            //   height: 24,
+            // ),
             TabBar(tabs: myTabs),
 
             // tab bar view
-            const Expanded(
+            Expanded(
                 child: TabBarView(children: [
               DonutTab(),
-              BurgerTab(),
-              SmoothieTab(),
-              PancakeTab(),
-              PizzaTab(),
+              const BurgerTab(),
+              const SmoothieTab(),
+              const PancakeTab(),
+              const PizzaTab(),
             ]))
           ],
         ),
